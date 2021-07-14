@@ -16,7 +16,7 @@ def solution(citations):
     return i
 ```
 
-Ã¹¹øÂ° ÄÚµå: ¹®Á¦¸¦ Àß¸øÀÌÇØÇØ¼­ ´äÀÌ ´Ù Æ²·È´Ù.
+ì²«ë²ˆì§¸ ì½”ë“œ: ë¬¸ì œë¥¼ ì˜ëª»ì´í•´í•´ì„œ ë‹µì´ ë‹¤ í‹€ë ¸ë‹¤.
 
 ```python
 def solution(citations):
@@ -30,8 +30,8 @@ def solution(citations):
     return 0
 ```
 
-µÎ¹øÂ° ÄÚµå:h-index¿¡ ´ëÇØ¼­ Ã£¾Æº¸°í ´Ù½Ã Ç®¾îºÃ´õ´Ï Á¤´äÀÌ¿´´Ù.
+ë‘ë²ˆì§¸ ì½”ë“œ:h-indexì— ëŒ€í•´ì„œ ì°¾ì•„ë³´ê³  ë‹¤ì‹œ í’€ì–´ë´¤ë”ë‹ˆ ì •ë‹µì´ì˜€ë‹¤.
 
-ÀÌ·Î½á ÇÁ·Î±×·¡¸Ó½º¿¡¼­ Á¤·Ä ¹®Á¦ »Ì¾Æ³í °Ç ´Ù Ç®¾ú´Ù.
+ì´ë¡œì¨ í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ì—ì„œ ì •ë ¬ ë¬¸ì œ ë½‘ì•„ë…¼ ê±´ ë‹¤ í’€ì—ˆë‹¤.
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2123ffa6-0302-415e-8cd9-e39fdb269788/zxczxc.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2123ffa6-0302-415e-8cd9-e39fdb269788/zxczxc.png)
