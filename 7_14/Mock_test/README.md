@@ -38,11 +38,11 @@ def solution(answers):
     return answer
 ```
 
-Ã³À½ Á¦ÃâÇÑ ÄÚµå: Å×½ºÆ® ÄÉÀÌ½º 2,3,4 ¸»°í ´Ù ·±Å¸ÀÓ ¿¡·¯°¡ ¶¹´Ù.
+ì²˜ìŒ ì œì¶œí•œ ì½”ë“œ: í…ŒìŠ¤íŠ¸ ì¼€ì´ìŠ¤ 2,3,4 ë§ê³  ë‹¤ ëŸ°íƒ€ìž„ ì—ëŸ¬ê°€ ë–´ë‹¤.
 
-³ªÀÇ »ý°¢: ¸®½ºÆ®¸¦ È®ÀåÇÏ´Â ÄÚµå¿¡¼­ ¿À·ù°¡ »ý±ä°Å °°¾Ò´Ù.
+ë‚˜ì˜ ìƒê°: ë¦¬ìŠ¤íŠ¸ë¥¼ í™•ìž¥í•˜ëŠ” ì½”ë“œì—ì„œ ì˜¤ë¥˜ê°€ ìƒê¸´ê±° ê°™ì•˜ë‹¤.
 
-±×·¡¼­ Àú ºÎºÐÀ» ¹Ù²Ü¼ö ÀÖ´Â ¹æ¹ýÀ» »ý°¢ÇØº¸¾Ò´Ù.
+ê·¸ëž˜ì„œ ì € ë¶€ë¶„ì„ ë°”ê¿€ìˆ˜ ìžˆëŠ” ë°©ë²•ì„ ìƒê°í•´ë³´ì•˜ë‹¤.
 
 ```python
 def solution(answers):
@@ -54,7 +54,7 @@ def solution(answers):
     third = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5]
 
     score = [0, 0, 0]
-    for i in range(size): # Á¤´ä°ú ÇÐ»ý 1, 2, 3ÀÇ ´äÀ» ¸ÂÃçº¸´Â ÄÚµå
+    for i in range(size): # ì •ë‹µê³¼ í•™ìƒ 1, 2, 3ì˜ ë‹µì„ ë§žì¶°ë³´ëŠ” ì½”ë“œ
         if first[i % 5] == answers[i]:
             score[0] += 1
         if second[i % 8] == answers[i]:
@@ -62,10 +62,10 @@ def solution(answers):
         if third[i % 10] == answers[i]:
             score[2] += 1
 
-    max_score = max(score) # °¡Àå ³ôÀº Á¡¼ö¸¦ ±¸ÇÔ
+    max_score = max(score) # ê°€ìž¥ ë†’ì€ ì ìˆ˜ë¥¼ êµ¬í•¨
 
     for i in range(len(score)):
-		# µ¿ÀÏ Á¡¼ö°¡ ÀÖÀ»¼öµµ ÀÖÀ¸¹Ç·Î °¡Àå ³ôÀº Á¡¼ö¸¦ »Ì¾Æ ºñ±³ÇÏ¿© ÇÐ»ýÀ» Ãß°¡Çß´Ù.
+		# ë™ì¼ ì ìˆ˜ê°€ ìžˆì„ìˆ˜ë„ ìžˆìœ¼ë¯€ë¡œ ê°€ìž¥ ë†’ì€ ì ìˆ˜ë¥¼ ë½‘ì•„ ë¹„êµí•˜ì—¬ í•™ìƒì„ ì¶”ê°€í–ˆë‹¤.
         if max_score == score[i]:
             answer.append(i+1)
 
@@ -73,8 +73,8 @@ def solution(answers):
 
 ```
 
-µÎ¹øÂ° Á¦Ãâ ÄÚµå: Á¤´ä
+ë‘ë²ˆì§¸ ì œì¶œ ì½”ë“œ: ì •ë‹µ
 
-¸®½ºÆ®¸¦ È®ÀåÇÏ´Â ¹æ¹ýÀ» ¾²Áö¾Ê°í ÀÎµ¦½º¸¦ È°¿ëÇÑ ¹æ¹ýÀ» »ý°¢ÇØº¸¾Ò´Ù.
+ë¦¬ìŠ¤íŠ¸ë¥¼ í™•ìž¥í•˜ëŠ” ë°©ë²•ì„ ì“°ì§€ì•Šê³  ì¸ë±ìŠ¤ë¥¼ í™œìš©í•œ ë°©ë²•ì„ ìƒê°í•´ë³´ì•˜ë‹¤.
 
-ÇÁ·Î±×·¡¸Ó½º¿¡¼­ Å×½ºÆ® ÄÉÀÌ½º¸¦ °ø°³ÇÏ¸é ÁÁ¾Ò°ÚÁö¸¸, ¾Æ¸¶µµ ³» »ý°¢¿¡´Â ¸®½ºÆ®ÀÇ Å©±â°¡ ³Ê¹« Ä¿Á®¼­ ¿À·ù°¡ »ý±â´Â °Å °°¾Ò´Ù. ´ÙÀ½¿¡´Â ¹«ÀÛÁ¤ È®ÀåÇÏ´Â ¹æ½ÄÀ» »ç¿ëÇÏ´Â °ÍÀÌ ¾Æ´Ï¶ó ÀÎµ¦½º¸¦ È°¿ëÇÑ ¹æ¹ýÀ» ¸ÕÀú »ý°¢ÇØºÁ¾ß°Ú´Ù.
+í”„ë¡œê·¸ëž˜ë¨¸ìŠ¤ì—ì„œ í…ŒìŠ¤íŠ¸ ì¼€ì´ìŠ¤ë¥¼ ê³µê°œí•˜ë©´ ì¢‹ì•˜ê² ì§€ë§Œ, ì•„ë§ˆë„ ë‚´ ìƒê°ì—ëŠ” ë¦¬ìŠ¤íŠ¸ì˜ í¬ê¸°ê°€ ë„ˆë¬´ ì»¤ì ¸ì„œ ì˜¤ë¥˜ê°€ ìƒê¸°ëŠ” ê±° ê°™ì•˜ë‹¤. ë‹¤ìŒì—ëŠ” ë¬´ìž‘ì • í™•ìž¥í•˜ëŠ” ë°©ì‹ì„ ì‚¬ìš©í•˜ëŠ” ê²ƒì´ ì•„ë‹ˆë¼ ì¸ë±ìŠ¤ë¥¼ í™œìš©í•œ ë°©ë²•ì„ ë¨¼ì € ìƒê°í•´ë´ì•¼ê² ë‹¤.
