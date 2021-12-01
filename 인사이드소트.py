@@ -1,7 +1,7 @@
 n = int(input())
  
 li = []
-li = list(map(int,str(n))) 으로 변경가능
+li = list(map(int,str(n)))
     
 li.sort(reverse=True) 
  
